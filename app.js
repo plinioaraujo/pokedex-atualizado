@@ -67,6 +67,7 @@ const getPokemons = async () =>{
 }
 
 const renderPokemons = pokemons => {
+  
   const ul = document.querySelector('[data-js="pokemons-list"]')
   pokemons.forEach( ({id, name, types, imgUrl}) => {
     const li = document.createElement('li')
